@@ -44,8 +44,6 @@ satus/
 ├── components/             # Reusable UI components
 ├── hooks/                  # Custom React hooks
 ├── integrations/           # Third-party service integrations
-│   ├── hubspot/           # HubSpot forms integration
-│   ├── shopify/           # E-commerce functionality
 │   └── sanity/            # Headless CMS
 ├── libs/                   # Utility functions and helpers
 ├── orchestra/              # Debug and development tools
@@ -89,8 +87,6 @@ satus/
 
 ### Third-Party Integrations
 - **Sanity** - Headless CMS with visual editing
-- **Shopify** - E-commerce with cart functionality
-- **HubSpot** - Forms and marketing automation
 
 ## Modular Integrations
 
@@ -219,12 +215,6 @@ NEXT_PUBLIC_SANITY_DATASET="production"
 NEXT_PUBLIC_SANITY_STUDIO_URL="http://localhost:3000/studio"
 SANITY_API_WRITE_TOKEN="your-write-token"
 
-# Shopify
-SHOPIFY_DOMAIN="your-store.myshopify.com"
-SHOPIFY_STOREFRONT_TOKEN="your-storefront-token"
-
-# HubSpot
-HUBSPOT_ACCESS_TOKEN="your-access-token"
 ```
 
 ## 📚 Documentation

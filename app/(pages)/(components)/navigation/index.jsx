@@ -8,8 +8,7 @@ const LINKS = [
   { href: '/', label: 'home' },
   { href: '/r3f', label: 'r3f' },
   { href: '/sanity', label: 'sanity' },
-  { href: '/shopify', label: 'shopify' },
-  { href: '/hubspot', label: 'hubspot' },
+  
 ]
 
 export function Navigation() {

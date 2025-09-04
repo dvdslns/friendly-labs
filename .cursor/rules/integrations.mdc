@@ -169,53 +169,6 @@ Third party integration guidelines
        └── image.ts            # Image utilities
    ```
 
-## Shopify Integration
-
-1. **API Configuration**
-   - Use GraphQL for queries
-   - Store credentials securely
-   ```typescript
-   const shopifyClient = createShopifyClient({
-     domain: process.env.SHOPIFY_DOMAIN,
-     storefrontAccessToken: process.env.SHOPIFY_STOREFRONT_TOKEN
-   })
-   ```
-
-2. **Product Management**
-   - Use fragments for reusable queries
-   - Implement proper error handling
-   ```typescript
-   import { PRODUCT_FRAGMENT } from '~/integrations/shopify/fragments'
-   ```
-
-3. **Cart Operations**
-   - Use mutations for cart operations
-   - Maintain cart state with Zustand
-   ```typescript
-   import { ADD_TO_CART } from '~/integrations/shopify/mutations'
-   ```
-
-## Hubspot Forms
-
-1. **Form Integration**
-   - Use Server Actions for submissions
-   - Validate data server-side
-   ```typescript
-   export async function submitToHubspot(formData: FormData) {
-     'use server'
-     const client = new HubspotClient({
-       accessToken: process.env.HUBSPOT_ACCESS_TOKEN
-     })
-     // submission logic
-   }
-   ```
-
-2. **Newsletter Subscriptions**
-   - Implement proper consent management
-   - Handle errors gracefully
-   ```typescript
-   import { HubspotNewsletterAction } from '~/integrations/hubspot/action'
-   ```
 
 ## General Integration Best Practices
 

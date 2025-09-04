@@ -90,8 +90,6 @@ Detailed documentation is available in the repository:
 
 ### Integrations
 - [Sanity](https://www.sanity.io/)
-- [HubSpot](https://www.hubspot.com/)
-- [Shopify](https://shopify.com/)
 
 ### UI & Styling
 - CSS Modules with PostCSS
@@ -155,8 +153,6 @@ project/
 ├── components/          # Reusable components
 ├── integrations/        # Third-party integrations
 │   ├── sanity/         # CMS integration
-│   ├── hubspot/        # Marketing integration
-│   └── shopify/        # E-commerce integration
 ├── styles/             # Styling system
 │   ├── css/            # Generated CSS
 │   └── scripts/        # Style generation
